@@ -6,7 +6,7 @@ const carMongooseSchema = new Schema<ICar>({
   model: String,
   year: Number,
   color: String,
-  status: Boolean,
+  status: { type: Boolean, required: false },
   buyValue: Number,
   doorsQty: Number,
   seatsQty: Number,
