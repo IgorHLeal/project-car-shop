@@ -38,6 +38,7 @@ Os requisitos não avaliativos são para desenvilvemento de testes para cobertur
 
 * Aplicação dos princípios da POO
 * Construção de uma API com CRUD
+* Implementação do modelo MSC
 * Implementação testes unitários com o Jest
 * Aplicação de conceitos do MongoDB
 * Criação de interfaces genéricas
