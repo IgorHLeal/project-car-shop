@@ -71,8 +71,8 @@ describe('Car Model', () => {
 
   describe('Deleting a car', () => {
 		it('Successfully deleted', async () => {
-			const careleted = await carModel.delete(carMockWithId._id);
-			expect(careleted).to.be.undefined;
+			const carDeleted = await carModel.delete(carMockWithId._id);
+			expect(carDeleted).to.be.undefined;
 		});
 	});
 })
