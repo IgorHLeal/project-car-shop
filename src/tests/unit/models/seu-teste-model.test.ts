@@ -56,7 +56,7 @@ describe('Car Model', () => {
 
   describe('Updating a car', () => {
 		it('Successfully changed', async () => {
-			const carUpdated = await carModel.update("63567e103c90cf442ecd85cd", carMockForChange);
+			const carUpdated = await carModel.update(carMockWithId._id, carMockForChange);
 			expect(carUpdated).to.be.deep.equal(carMockForChangeWithId);
 		});
 	
@@ -69,9 +69,9 @@ describe('Car Model', () => {
 		});
 	});
 
-  describe('Updating a car', () => {
-		it('Successfully changed', async () => {
-			const careleted = await carModel.delete("63567e103c90cf442ecd85cd");
+  describe('Deleting a car', () => {
+		it('Successfully deleted', async () => {
+			const careleted = await carModel.delete(carMockWithId._id);
 			expect(careleted).to.be.undefined;
 		});
 	});
